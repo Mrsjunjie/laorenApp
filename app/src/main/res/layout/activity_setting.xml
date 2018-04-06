@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lrs="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ff0">
+        <Button
+            android:id="@+id/back"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:background="#ff0"
+            android:textColor="#000"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="设置"
+            android:textColor="#000"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="摔倒检测服务"
+            android:textSize="22dp"
+            android:textColor="#000"
+            android:layout_weight="1"
+            />
+        <com.wyj.cn.lrs.view.SlideButtonView
+            android:id="@+id/sbv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            lrs:button_bg="@drawable/switch_background"
+            lrs:slide_bg="@drawable/slide_button"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            >
+        </com.wyj.cn.lrs.view.SlideButtonView>
+
+
+    </LinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:background="#000"
+    ></View>
+
+
+</LinearLayout>

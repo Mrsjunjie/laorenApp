@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="fill_parent"
+   >
+
+
+    <FrameLayout
+        android:id="@+id/fragment_2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:visibility="gone"
+        >
+      <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+          <RelativeLayout
+              android:background="#ff0"
+              android:layout_width="match_parent"
+              android:layout_height="60dp">
+           <TextView
+
+               android:layout_centerInParent="true"
+               android:layout_width="wrap_content"
+               android:textSize="20sp"
+               android:gravity="center"
+               android:text="添加的好友"
+               android:layout_height="60dp"/>
+               <TextView
+                   android:id="@+id/tinajia"
+                   android:layout_margin="10dp"
+                   android:layout_centerVertical="true"
+                   android:layout_alignParentRight="true"
+                   android:layout_width="wrap_content"
+                   android:text="添加"
+                   android:textSize="18sp"
+                   android:layout_height="wrap_content" />
+          </RelativeLayout>
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/list_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+         </RelativeLayout>
+     </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:visibility="visible"
+      >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:background="#ff0"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:text="已设置的紧急联系人"
+                    android:layout_height="60dp"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/list_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></ListView>
+
+
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <FrameLayout
+
+         android:id="@+id/fragment_1"
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="10"
+         android:visibility="gone">
+
+        <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+            <RelativeLayout
+                android:background="#ff0"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="60dp"
+                      android:textSize="20sp"
+                      android:gravity="center"
+                      android:text="地图设置"/>
+            </RelativeLayout>
+           <CheckBox
+               android:id="@+id/checkbox_1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="18sp"
+               android:layout_margin="10dp"
+               android:text="轨迹监听"/>
+           <CheckBox
+             android:layout_margin="10dp"
+             android:id="@+id/checkbox_2"
+             android:text="开启摔倒感应"
+             android:textSize="18sp"
+             android:layout_width="match_parent"
+             android:layout_height="30dp" />
+               <LinearLayout
+                 android:layout_margin="10dp"
+                 android:orientation="horizontal"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+                 <TextView
+                     android:textColor="#000"
+                    android:text="设置监视半径 :"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                 <EditText
+                     android:id="@+id/gongli"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="公里"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/chakan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="查看地图"/>
+      </LinearLayout>
+    </FrameLayout
+         >
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+
+        android:layout_width="match_parent"
+        android:layout_weight="1.8"
+        android:layout_height="0dp">
+        <RadioGroup
+
+            android:id="@+id/rg_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#11000000"
+
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_weight="0.03">
+
+
+            <RadioButton
+                android:id="@+id/rb_common_frame"
+                style="@style/bottom_tag_style"
+                android:drawableTop="@drawable/rb_common_frame_drawable_selector"
+                android:text="地图"
+
+                />
+
+            <RadioButton
+                android:id="@+id/rb_thirdparty"
+                style="@style/bottom_tag_style"
+                android:drawableTop="@drawable/rb_thirdparty_drawable_selector"
+                android:text="朋友"
+
+                />
+
+            <RadioButton
+                android:id="@+id/rb_custom"
+                style="@style/bottom_tag_style"
+                android:drawableTop="@drawable/rb_custom_drawable_selector"
+                android:text="联系" />
+
+
+
+
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+     <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+     <LinearLayout
+         android:layout_alignParentBottom="true"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+     <Button
+         android:layout_weight="0.5"
+         android:onClick="fanhui"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:text="返回"
+         />
+          <Button
+              android:onClick="baocun"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="0.5"
+              android:text="保存"
+              />
+     </LinearLayout>
+</RelativeLayout>
